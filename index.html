@@ -11,17 +11,23 @@
 
 <body>
     <div class="nav-bg">
-    <nav class="navbar">
+    <nav class="navbar"  id="myTopnav">
         <a href="#" class="logo">Portfolio.</a>
+       
         <ul>
             <li class="active "><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skill">Skills</a></li>
             <li><a href="#work">Experiences</a></li>
             <li><a href="#contact">Contact</a></li>
-
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
         </ul>
+       
     </nav>
+   
+    
     <div class="bar-animation">
         <div class="bar"style="--i:6;"></div>
         <div class="bar"style="--i:5;"></div>
@@ -228,7 +234,16 @@ user data, creating a smooth food ordering experience from start to finish.</p>
 </section>
 
   
-     
+     <script>
+function myFunction() {
+  var x = document.getElementById("navbar");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
    
 </body>
 
