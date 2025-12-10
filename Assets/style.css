@@ -364,7 +364,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: center;
+  justify-content: center;z
   align-items: center;
 }
 
